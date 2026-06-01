@@ -194,7 +194,7 @@ def show_birthday(args, book):
 def birthdays(book):
     birthdays = "Birthdays in the next 7 days:\n"
     for item in book.get_upcoming_birthdays():
-        birthdays += f"{item["name"]}, Birthday: {item["congratulation_date"]}\n"
+        birthdays += f"{item['name']}, Birthday: {item['congratulation_date']}\n"
     return birthdays
 
 def save_book(book, FILENAME):

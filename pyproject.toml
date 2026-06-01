@@ -5,7 +5,7 @@ description = ""
 authors = [
     {name = "kolkolm",email = "non@gmail.com"}
 ]
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
 ]
 

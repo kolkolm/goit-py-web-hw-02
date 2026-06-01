@@ -8,8 +8,8 @@ WORKDIR /app
 
 COPY pyproject.toml poetry.lock ./
 
-RUN poetry install --no-only main --no-interaction --no-ansi
+RUN poetry install --only main --no-root --no-interaction --no-ansi
 
 COPY . .
 
-CMD ["/bin/bash"]
+CMD ["python", "hw/main.py"]
